@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: aliens;
+    src: url(fuentes/aliens\ and\ cows_trial.ttf);
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(7, 34, 39);
+    text-align: center;
+    align-items: center;
+}
+header{
+    display: flex;
+    min-height: 100px;
+    width: 100%;
+    background-color: rgb(53, 133, 139);
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 0px 9px 3px -3px rgba(255,255,255,1);
+}
+.logo img{
+    height: 100px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 100px;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(174, 254, 255);
+}
+nav a{
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 10px;
+    align-items:center; 
+}
+nav a:hover{
+    padding: 37.5px 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 6px;
+    background-color: rgb(7, 34, 39);
+    color: #fff;
+    transition: ease 400ms;
+}
+footer{
+    display: flex;
+    min-height: 100px;
+    max-height: 150px;
+    width: 100%;
+    background-color: rgb(53, 133, 139);
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.autopartes{
+    background-image: url(imagenes/kool-c-GUkCocksjK8-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #AAA;
+}
+.autopartesInicio{
+    margin-top: 50px;
+    margin-left: 30px;
+    width: 40%;
+    min-height: 400px;
+    color: rgb(174, 254, 255);
+    font-weight: lighter;
+    font-size: 5.5em;
+    font-family: aliens;
+    text-align: start;
+}
+.cotizaciones{
+    margin-right: 500px;
+    padding: 5px 20px;
+    font-size: 2em;
+    color: rgb(7, 34, 39);
+    border: 1px rgb(174, 254, 255);
+    border-radius: 10px;
+    background-color: rgb(174, 254, 255);
+    box-shadow: 0px 5px 10px rgb(7, 34, 39); 
+}
+.cotizaciones:hover{
+    background-color: rgb(7, 34, 39);
+    color: rgb(174, 254, 255);
+    box-shadow: 0px 5px 10px rgb(174, 254, 255);
+    transition: ease 400ms;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(174, 254, 255);
+    width: 100%;
+    min-height: 60px;
+}
+
+.bannerMedio{
+    margin: auto;
+    color: rgb(7, 34, 39);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    text-align: start;
+}
+.bannerb{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(174, 254, 255);
+    width: 100%;
+    min-height: 60px;
+}
+
+.bannerMediob{
+    margin: auto;
+    color: rgb(7, 34, 39);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    text-align: start;
+}
+.contacto{
+    padding: 5px 20px;
+    margin-right: 300px;
+    border: 1px solid rgb(7, 34, 39);
+    background-color: rgb(7, 34, 39);
+    color: rgb(174, 254, 255);
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgb(53, 133, 139);
+    font-size: 1.2em;
+}
+.contacto:hover{
+    background-color: rgb(174, 254, 255);
+    color: rgb(7, 34, 39);
+    box-shadow: 0px 5px 10px rgb(7, 34, 39);
+    transition: ease 400ms;
+}
+.nosotrosContact{
+    padding: 5px 20px;
+    margin-right: 450px;
+    border: 1px solid rgb(7, 34, 39);
+    background-color: rgb(7, 34, 39);
+    color: rgb(174, 254, 255);
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgb(53, 133, 139);
+    font-size: 1.2em;
+}
+.nosotrosContact:hover{
+    background-color: rgb(174, 254, 255);
+    color: rgb(7, 34, 39);
+    box-shadow: 0px 5px 10px rgb(7, 34, 39);
+    transition: ease 400ms;
+}
+
+.empresas{
+    background-image: url(imagenes/jose-vazquez-Q5RBHz9cu1A-unsplash.jpg) ;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #AAA;
+
+}
+.empresasInicio{
+    margin-top: 100px;
+    margin-right: 100px;
+    width: 45%;
+    min-height: 400px;
+    color: rgb(7, 34, 39);
+    font-weight: lighter;
+    font-size: 6em;
+    font-family: aliens;
+    text-align: end;
+}
+.empresasContact{
+    margin-left: 600px;
+    padding: 5px 20px;
+    font-size: 2em;
+    color: rgb(7, 34, 39);
+    border: 1px rgb(174, 254, 255);
+    border-radius: 10px;
+    background-color: rgb(174, 254, 255);
+    box-shadow: 0px 5px 10px rgb(7, 34, 39); 
+}
+.empresasContact:hover{
+    background-color: rgb(7, 34, 39);
+    color: rgb(174, 254, 255);
+    box-shadow: 0px 5px 10px rgb(174, 254, 255);
+    transition: ease 400ms;
+}
+.envios{
+    background-image: url(imagenes/ismael-paramo-tnVdQGmWtb0-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #AAA;
+}
+.enviosInicio{
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 40%;
+    min-height: 400px;
+    color: rgb(174, 254, 255);
+    font-weight: lighter;
+    font-size: 6em;
+    font-family: aliens;
+    text-align: start;
+}
+.enviosContact{
+    margin-right: 500px;
+    padding: 5px 20px;
+    font-size: 2em;
+    color: rgb(7, 34, 39);
+    border: 1px rgb(174, 254, 255);
+    border-radius: 10px;
+    background-color: rgb(174, 254, 255);
+    box-shadow: 0px 5px 10px rgb(7, 34, 39); 
+}
+.enviosContact:hover{
+    background-color: rgb(7, 34, 39);
+    color: rgb(174, 254, 255);
+    box-shadow: 0px 5px 10px rgb(174, 254, 255);
+    transition: ease 400ms;
+
+}
+.copy{  
+    margin:auto;
+    padding: 15px;
+}
+.bases{
+    margin:auto;
+    padding-bottom: 15px;
+}
+.bases a{
+    color: black;
+}
+.bancos{
+    margin: auto;
+    width: 35%;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+li{
+    display: inline-block;
+    height: 15px;
+    width: 30px;
+}
+
+@media (max-width: 800px){
+    .autopartes{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .autopartesInicio{
+        width: 100%;
+    }
+    .cotizaciones{
+        align-items: center;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .banner{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .bannerMedio{
+        margin:auto;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .banner2{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .bannerMedio2{
+        margin:auto;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .contacto{
+        align-items: center;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .empresas{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .empresasInicio{
+        width: 100%;
+        margin-right: 50px;
+        justify-content: end;
+    }
+    .empresasContact{
+        align-items: center;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    .envios{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .enviosInicio{
+        width: 100%;
+    }
+    .enviosContact{
+        align-items: center;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+
+}

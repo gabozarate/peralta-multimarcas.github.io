@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: aliens;
+    src: url(fuentes/aliens\ and\ cows_trial.ttf);
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(7, 34, 39);
+    text-align: center;
+    align-items: center;
+}
+header{
+    display: flex;
+    min-height: 100px;
+    width: 100%;
+    background-color: rgb(53, 133, 139);
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 0px 9px 3px -3px rgba(255,255,255,1);
+}
+.logo img{
+    height: 100px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 100px;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(174, 254, 255);
+}
+nav a{
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 10px;
+    align-items:center; 
+}
+nav a:hover{
+    padding: 37.5px 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 6px;
+    background-color: rgb(7, 34, 39);
+    color: #fff;
+    transition: ease 400ms;
+}
+footer{
+    display: flex;
+    min-height: 100px;
+    max-height: 150px;
+    width: 100%;
+    background-color: rgb(53, 133, 139);
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.copy{  
+    margin:auto;
+    padding: 15px;
+}
+.bases{
+    margin:auto;
+    padding-bottom: 15px;
+    text-decoration: underline;
+}
+.bases a{
+    color: black;
+}
+.bancos{
+    margin: auto;
+    width: 35%;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+li{
+    display: inline-block;
+    height: 15px;
+    width: 30px;
+}
+
+
+
+@media (max-width: 800px){
+    header{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    body{
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        min-height: 100vh;
+    }
+    footer{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .logo img{
+        margin: auto;
+    }
+    #peralta{
+        display: inline-block;
+        margin-left: 0px;
+    }
+    nav{
+        margin: auto;
+        padding: 10px, 0px;
+    }
+    nav a:hover{
+        padding: 1px;
+        background-color:rgb(7, 34, 39) ;
+        border: 0px solid black;
+        border-top: 0px solid rgb(7, 34, 39);
+        border-radius: 10px;
+    }
+    .bancos{
+        height: 40px;
+        width: 300px;
+        margin: auto;   
+    }
+}

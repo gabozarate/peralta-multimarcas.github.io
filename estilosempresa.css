@@ -1,0 +1,49 @@
+.empresas{
+    background-image: url(imagenes/jose-vazquez-Q5RBHz9cu1A-unsplash.jpg) ;
+    background-size: cover;
+    background-position: center;
+    display:list-item;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #AAA;
+
+}
+.empresasInicio{
+    margin: auto;
+    padding: 10px;
+    width: 60%;
+    min-height: 200px;
+    min-height: 400px;
+    color: rgb(109, 201, 186);
+    font-weight: lighter;
+    font-size: 6em;
+    font-family: aliens;
+    text-align: center;
+}
+.empresasContact{
+    margin: auto;
+    padding: 5px 20px;
+    font-size: 2em;
+    color: rgb(7, 34, 39);
+    border: 1px rgb(174, 254, 255);
+    border-radius: 10px;
+    background-color: rgb(174, 254, 255);
+    box-shadow: 0px 5px 10px rgb(7, 34, 39);
+     
+}
+.empresasContact:hover{
+    background-color: rgb(7, 34, 39);
+    color: rgb(174, 254, 255);
+    box-shadow: 0px 5px 10px rgb(174, 254, 255);
+    transition: ease 400ms;
+}
+.empresas p{
+    margin: auto;
+    width: 75%;
+    min-height: 200px;
+    color: rgb(109, 201, 186);
+    font-weight: lighter;
+    font-size: 2em;
+    font-family: aliens;
+    text-align: center;
+}

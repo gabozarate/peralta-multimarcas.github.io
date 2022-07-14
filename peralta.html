@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <script>
+      let product = prompt("INGRESE EL PRODUCTO DESEADO: NEUMATICOS - LLANTAS - ACCESORIOS");
+      let state = prompt("INGRESE LA PROVINCIA DE DESTINO");
+      let cant = parseInt(prompt("INGRESE LA CANTIDAD DE PRODUCTOS"));
+
+      console.log(
+        `El producto ingresado es ${product}`,
+        `La provincia ingresada es ${state}`,
+        `La cantidad ingresada es ${cant}`
+      );
+
+      if (product.toLowerCase().includes("neumaticos")) {
+        product = 500;
+      } else if (product.toLowerCase().includes("llantas")) {
+        product = 400;
+      } else if (product.toLowerCase().includes("accesorios")) {
+        product = 300;
+      }
+
+      if (state.toLowerCase().includes(`neuquen`)) {
+        state=0
+      } else if (
+        state.toLowerCase().includes(`jujuy`) ||
+        state.toLowerCase().includes(`salta`) ||
+        state.toLowerCase().includes(`tucuman`) ||
+        state.toLowerCase().includes(`catamarca`) ||
+        state.toLowerCase().includes(`santiago del estero`) ||
+        state.toLowerCase().includes(`la rioja`)
+      ) {
+        state = 2000
+      } else if (
+        state.toLowerCase().includes(`cordoba`) ||
+        state.toLowerCase().includes(`san juan`) ||
+        state.toLowerCase().includes(`san luis`) ||
+        state.toLowerCase().includes(`santa fe`) ||
+        state.toLowerCase().includes(`buenos aires`)
+      ) {
+        state = 1500
+      } else if (
+        state.toLowerCase().includes(`entre rios`) ||
+        state.toLowerCase().includes(`corrientes`) ||
+        state.toLowerCase().includes(`misiones`)
+      ) {
+        state = 2500
+      } else if(
+        state.toLowerCase().includes(`mendoza`) ||
+        state.toLowerCase().includes(`la pampa`) ||
+        state.toLowerCase().includes(`rio negro`)
+      ) {
+        state = 500
+      } else if (
+        state.toLowerCase().includes(`chubut`) ||
+        state.toLowerCase().includes(`santa cruz`) ||
+        state.toLowerCase().includes(`tierra del fuego`) ||
+        state.toLowerCase().includes(`islas malvinas`)
+      ) {
+        state = 3000
+      };
+
+      const costo = product * state + cant;
+      alert(`EL COSTO TOTAL DEL ENVIO ES ${costo}`);
+
+    </script>
+  </body>
+</html>
+
